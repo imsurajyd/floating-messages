@@ -53,6 +53,7 @@ const romanticShort = [
 
 let btn = document.querySelector("button");
 let main = document.querySelector("main");
+let img = document.querySelector("img");
 
 function addRandomText() {
   let h1 = document.createElement("h1");
@@ -116,6 +117,7 @@ function addRandomText() {
 }
 
 btn.addEventListener("click", function () {
+    img.style.display = "none";
   btn.style.pointerEvents = "none";
   btn.disabled = true;
   btn.innerText = "Babu... ❤️";
@@ -125,11 +127,12 @@ btn.addEventListener("click", function () {
 
     if (!success) {
       clearInterval(timer);
-      btn.innerText = "💕";
-      btn.style.fontSize = "100px";
-      btn.style.backgroundColor = "#FFDFEA";
-      btn.style.borderRadius = "50%"
-      btn.style.boxShadow = "none"
+      btn.innerText = "Love You Babu.💕";
+      btn.style.color = "#193b60";
+      btn.style.fontWeight = "600";
+      btn.style.boxShadow = "none";
+      btn.style.backgroundColor = "#ffdfea";
+
     }
   }, 300);
 });

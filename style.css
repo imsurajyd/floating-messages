@@ -16,6 +16,13 @@ main {
   overflow: hidden;
   background-color: #ffdfea;
 }
+img {
+  width: 80vw;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 button {
   position: absolute;
   z-index: 999;
