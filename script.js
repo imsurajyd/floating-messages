@@ -117,7 +117,7 @@ function addRandomText() {
 }
 
 btn.addEventListener("click", function () {
-    img.style.display = "none";
+  img.style.display = "none";
   btn.style.pointerEvents = "none";
   btn.disabled = true;
   btn.innerText = "Babu... ❤️";
@@ -132,7 +132,6 @@ btn.addEventListener("click", function () {
       btn.style.fontWeight = "600";
       btn.style.boxShadow = "none";
       btn.style.backgroundColor = "#ffdfea";
-
     }
   }, 300);
 });
